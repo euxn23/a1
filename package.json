@@ -1,0 +1,33 @@
+{
+  "name": "a1ter",
+  "version": "0.1.0",
+  "description": "A1 notation (used in Excel, Spreadsheet) converter for JavaScript, and cli.",
+  "main": "dist/index.js",
+  "repository": "ssh://git@github.com/euxn23/a1ter.git",
+  "author": "euxn23 <euxn23@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@types/node": "^12.12.31",
+    "jest": "^25.2.3",
+    "meta-npmignore": "^0.1.0",
+    "prettier": "^2.0.2",
+    "ts-jest": "^25.2.1",
+    "ts-node": "^8.8.1",
+    "typescript": "^3.8.3"
+  },
+  "keywords": [
+    "a1",
+    "a1-notation",
+    "excel",
+    "spreadsheet",
+    "column",
+    "cli",
+    "zero-dependency"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "test": "jest",
+    "prepare": "npm run build && meta-npmignore"
+  }
+}
